@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Västtrafik hållplatsmonitor</title>
+    <script src="js/getToken.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="lib/auto-complete.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="theme-color" content="#00394d">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<div id="container">
+    <div class="text_container"> <h1>Västtrafik hållplatsmonitor</h1>
+        </div>
+        <div id="input_container">
+            <input type="text" id="fromTextField" placeholder="Hållplats från"  tabindex="1" class="input-town" />
+            <input type="text" id="toTextField" placeholder="Hållplats mot (frivillig)" tabindex="2" class="input-town" />
+            <input type="button" id="btnContinue" value="Continue" tabindex="3" onclick="generateMonitor()">
+    </div>
+    <div class="text_container"><p> Ange vilken hållplats du vill åka från i fältet
+        "Hållplats från" och ange sedan hållplats mot vilket säger åt vilket håll du vill åka. Till exempel om du vill veta
+        när nästa buss eller vagn går från Korsvägen till Centralstationen skriver du Korsvägen i "Hållplats från"-fältet
+        och Centralstationen i "Hållplats mot"-fältet. </p>
+        <p>När du trycker på continue kommer en hållplatsmonitor likt de som finns ute på hållplatserna att genereras. Om du
+        åker samma väg varje dag kan det vara en bra idé att spara den genererade hållplatsmonitorn som ett bokmärke för
+        att snabbt kunna kolla hur länge det dröjer tills nästa buss eller vagn går.</p></div>
+    <div class="text_container"><p id="errorPara">
+
+    </p></div>
+
+</div>
+
+
+
+<script src="lib/auto-complete.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script>
+
+
+    document.getElementById("fromTextField").focus();
+    main();
+</script>
+
+</body>
+</html>

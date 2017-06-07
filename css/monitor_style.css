@@ -1,0 +1,131 @@
+.bussNumber {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    border-radius: 8px;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(0, 51, 72);
+    width: 100%;
+    clear: both;
+}
+
+.arrivalTime{
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+body{
+    font-family: Verdana, Arial, "Times New Roman", Serif;
+    font-size: 1.4em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: #00394d;
+}
+
+#container{
+    display:table;
+    width: 100%;
+    background-color: #00394d;
+    color: #FFFFFF;
+}
+
+#table{
+    width: 100%;
+}
+tr:nth-child(odd) > td{
+}
+
+th{
+    font-family: Verdana, Arial, "Times New Roman", Serif;
+    font-size: 1.4em;
+    text-align: left;
+    font-style: normal;
+
+
+}
+
+#header{
+    width: 100%;
+    font-size: 3em;
+}
+
+#busStop{
+    float: left;
+    width: 80%;
+    text-align: center;
+}
+
+#serverTime{
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+.loader {
+    margin: 60px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(255,255,255, 0.2);
+    border-right: 1.1em solid rgba(255,255,255, 0.2);
+    border-bottom: 1.1em solid rgba(255,255,255, 0.2);
+    border-left: 1.1em solid #ffffff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes expandWidth {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@-webkit-keyframes expandWidth {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.updateBarAnimation {
+    margin-left: 0;
+    margin-top: 0;
+    height: 2px;
+    width: 0;
+    background-color: rgba(0, 157, 198, 1);
+    -webkit-animation: expandWidth 20s infinite linear;
+    animation: expandWidth 20s infinite linear;
+
+
+}

@@ -1,0 +1,94 @@
+body{
+    background-color:  #00394d;
+
+}
+
+.input-town{
+    padding: 10px;
+    margin-top: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    font-family: Verdana, Arial, "Times New Roman", Serif;
+    font-size: 1.4em;
+
+}
+.input-town:focus{
+    border: solid 1px #A0A0A0;
+    box-shadow: 0 0 5px 2px #C3F6FF;
+}
+
+#container{
+    display: flex;
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnContinue{
+    background-color: #F9F9F9;
+    padding: 10px;
+    margin-top: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    font-family: Verdana, Arial, "Times New Roman", Serif;
+    font-size: 1.4em;
+}
+
+#btnContinue:active {
+    background-color: #CFCFCF;
+    border: solid 1px #A0A0A0;
+    box-shadow: 0 0 5px 2px #C3F6FF;
+}
+
+#btnContinue:focus{
+    border: solid 1px #A0A0A0;
+    box-shadow: 0 0 5px 2px #C3F6FF;
+}
+
+#btnContinue:hover{
+    border: solid 1px #A0A0A0;
+    box-shadow: 0 0 5px 2px #C3F6FF;
+}
+
+.text_container{
+    display: block;
+    font-family: Verdana, Arial, "Times New Roman", Serif;
+    color: #FFFFFF;
+    width: 100%;
+
+}
+.text_container > h1{
+    font-size: 2em;
+
+}
+
+.text_container > p{
+    font-size: 1.2em;
+}
+#errorPara {
+    color: crimson;
+}
+
+#input_container{
+    margin-left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: center;
+
+}
+
+#input_container > input{
+    margin-right: 3em;
+    margin-left: 0em;
+
+}
+
+
